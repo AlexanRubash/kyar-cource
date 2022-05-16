@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "BasicText";
+  src: url(Source/Fonts/HapnaSlabSerif-DemiBold.otf);
+}
+
+@font-face {
+  font-family: "SpanText";
+  src: url(Source/Fonts/Redemption.otf);
+}
+
+span, h1, h2, h3, h4, h5, h6 {
+  font-family: SpanText;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: x-large;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: aliceblue;
+}
+
+a:active {
+  color: aliceblue;
+}
+
+a:visited {
+  color: aliceblue;
+}
+
+a:hover {
+  color: #FF4500;
+}
+
+body {
+  text-shadow: black 2px 3px 4px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  color: aliceblue;
+  background-image: url(Source/Pictrures/rdre/back.jpg);
+}
+
+img {
+  max-width: 100%;
+}
+
+section, p {
+  font-family: BasicText;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 18px;
+  display: block;
+}
+
+.screen {
+  margin: auto;
+}
+
+.game {
+  display: inline-block;
+}
+/*# sourceMappingURL=rdre.css.map */

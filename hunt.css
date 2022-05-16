@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "BasicText";
+  src: url(Source/Fonts/HapnaSlabSerif-DemiBold.otf);
+}
+
+@font-face {
+  font-family: "SpanText";
+  src: url(Source/Fonts/Redemption.otf);
+}
+
+.main {
+  margin: 50px 15% 0 15%;
+  background-color: #927f64c2;
+  font-family: BasicText;
+}
+
+body {
+  text-shadow: black 2px 3px 4px;
+  color: aliceblue;
+  background-image: url(Source/Pictrures/rdr2/hunt-page/back.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+}
+
+img {
+  max-width: 100%;
+  size: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+section, p {
+  font-family: BasicText;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 18px;
+  display: block;
+}
+
+a:link {
+  color: aliceblue;
+}
+
+a:active {
+  color: aliceblue;
+}
+
+a:visited {
+  color: aliceblue;
+}
+
+a:hover {
+  color: brown;
+}
+
+.list {
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list ul li a:link {
+  color: #d4a349;
+}
+
+.list ul li a:active {
+  color: #d4a349;
+}
+
+.list ul li a:visited {
+  color: #d4a349;
+}
+
+.list ul li a:hover {
+  color: #37d323;
+}
+
+.mapa p {
+  font-size: 32px;
+  text-align: left;
+}
+/*# sourceMappingURL=hunt.css.map */

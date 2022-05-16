@@ -1,0 +1,24 @@
+@media only screen and (max-resolution:800px){
+    div.features {   
+        font-size: 2em;
+        margin-left: 10%;
+      width: 80%;
+    }
+    
+}
+@media only screen and (max-resolution:1250px){
+    div.features {
+   
+        margin-left: 10%;
+        font-size: 2em;
+        width: 40%;
+   
+    }
+  
+}
+@media only screen and (max-resolution:1620px){
+    div.features {
+        font-size: 2em;
+        width: 29%;
+    }
+}

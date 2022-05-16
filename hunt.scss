@@ -1,0 +1,88 @@
+$font-basic: BasicText;
+$font-span: SpanText;
+$color-span: aliceblue;
+$color-main: black;
+$col-list: rgb(212, 163, 73);
+@font-face {
+    font-family: "BasicText";
+    src:url(Source/Fonts/HapnaSlabSerif-DemiBold.otf);
+}
+
+@font-face {
+    font-family: "SpanText";
+    src:url(Source/Fonts/Redemption.otf)
+    
+}
+.main {
+    margin: 50px 15% 0 15%;
+    background-color: #927f64c2;
+    font-family: $font-basic;
+}
+
+
+
+body
+ {
+     text-shadow: $color-main 2px 3px 4px;
+    color:$color-span;
+    background-image: url(Source/Pictrures/rdr2/hunt-page/back.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    
+ } 
+
+img{
+    max-width: 100%;
+    size: 50%;
+    margin: 0 auto;
+    display: block;
+}
+section,p {
+    font-family: $font-basic;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
+    font-size: 18px;
+    display: block;
+}
+
+a:link{
+    color:$color-span;
+}
+a:active{
+    color: $color-span;
+} 
+a:visited{
+    color: $color-span;
+}
+a:hover{
+    color: brown;
+} 
+
+
+.list{
+    text-align: left;
+}
+a{
+    text-decoration: none;
+}
+.list ul li a:link {
+ color: $col-list;
+}
+.list ul li a:active {
+    color: $col-list;
+   }
+.list ul li a:visited {
+    color: $col-list;
+   }   
+   .list ul li a:hover {
+    color: rgb(55, 211, 35);
+   }   
+.mapa p{
+    font-size: 32px;
+    text-align: left;
+}
+

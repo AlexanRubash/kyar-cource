@@ -1,0 +1,79 @@
+$font-basic: BasicText;
+$font-span: SpanText;
+$color-span: aliceblue;
+@font-face {
+    font-family: "BasicText";
+    src:url(Source/Fonts/HapnaSlabSerif-DemiBold.otf);
+}
+
+@font-face {
+    font-family: "SpanText";
+    src:url(Source/Fonts/Redemption.otf)
+    
+}
+
+span, h1, h2,h3, h4,h5, h6{
+    font-family: $font-span;
+   
+}
+body
+ {
+    background-image:url(Source/Pictrures/rdr2/back1.jpg);   
+    color:$color-span;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+ } 
+img{
+    max-width: 100%;
+}
+section,p {
+    font-family: $font-basic;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
+    font-size: 18px;
+    display: block;
+}
+div.features {
+   
+    font-size: 2em;
+     display: inline-block;
+    width: 30%;
+    margin-left: 15%;
+  
+}
+a:link{
+    color:$color-span;
+}
+a:active{
+    color: $color-span;
+} 
+a:visited{
+    color: $color-span;
+}
+a:hover{
+    color: brown;
+} 
+
+a{
+    text-decoration: none;
+}
+
+div.games {
+    display: inline-block;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    
+}
+
+        .screen{
+            
+            margin: auto;
+            width: 70%;
+        }
+        

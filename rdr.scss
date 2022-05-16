@@ -1,0 +1,68 @@
+$font-basic: BasicText;
+$font-span: SpanText;
+$color-s: black;
+$color-nav: rgba(195, 71, 71, 0.609);
+$color-fnav: aliceblue;
+@font-face {
+    font-family: "BasicText";
+    src:url(Source/Fonts/HapnaSlabSerif-DemiBold.otf)
+    
+}
+@font-face {
+    font-family: "SpanText";
+    src:url(Source/Fonts/Redemption.otf)
+    
+}
+span, h1, h2,h3, h4,h5, h6{
+    font-family: $font-span;
+   
+}
+h1, h2,h3, h4,h5, h6{
+   
+    font-size:x-large;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: $color-fnav;
+}
+a:active{
+    color: $color-fnav;
+} 
+a:visited{
+    color: $color-fnav;
+}
+a:hover{
+    color: #7c3a22;
+} 
+
+body
+{
+    text-shadow: $color-s 2px 3px 4px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed; 
+   color:$color-fnav;
+   background-image: url(Source/Pictrures/rdr/background.jpg);
+} 
+img{
+   max-width: 100%;
+}
+section,p {
+   font-family: $font-basic;
+   margin: auto;
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 30px;
+   
+   font-size: 18px;
+   display: block;
+}
+
+
+.film{
+    width: 75%;
+    max-width: 100%;
+    height: 450px;
+}

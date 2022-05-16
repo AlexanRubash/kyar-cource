@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "SpanText";
+  src: url(Source/Fonts/Redemption.otf);
+}
+
+@font-face {
+  font-family: "BasicText";
+  src: url(Source/Fonts/HapnaSlabSerif-DemiBold.otf);
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #222121;
+  vertical-align: top;
+  position: fixed;
+  top: 0;
+  font-family: SpanText;
+  font-size: 24px;
+  left: 0;
+}
+
+nav {
+  margin: 15px 90% 15px 5px;
+  color: #222121;
+}
+
+/* убираем отступы и поля, а также list-style для "ul", 
+ * и добавляем "position:relative" */
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+/* применяем inline-block позиционирование к элементам навигации */
+nav ul li {
+  display: inline-block;
+  background-color: #222121;
+}
+
+/* стилизуем ссылки */
+nav a {
+  display: block;
+  color: #FFF;
+}
+
+/* скрываем выпадающие списки по умолчанию
+			 * и задаем абсолютное позиционирование */
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+
+/* отображаем выпадающий список при наведении */
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+/* первый уровень выпадающего списка */
+nav ul ul li {
+  min-width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+/* второй, третий и последующие уровни 
+			 * смещаем 2 и 3 уровни влево 
+			 * на значение длины первого уровня.
+			*/
+nav ul ul ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+svg {
+  float: left;
+  margin: 5px 10px 15px 5px;
+  width: 15px;
+  height: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+  svg {
+    margin: -40px 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  svg {
+    margin: -40px 0 0 0;
+  }
+}
+
+svg:hover {
+  -webkit-animation: 3s linear rotate;
+          animation: 3s linear rotate;
+}
+
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+  }
+}
+
+@keyframes rotate {
+  to {
+    -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+  }
+}
+
+body {
+  background-size: cover;
+}
+/*# sourceMappingURL=menu.css.map */
